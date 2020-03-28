@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background: lightgray;
+}
+
 .block {
   height: 500px;
   width: 500px;
@@ -15,10 +19,19 @@
 section {
   height: 50%;
   width: 50%;
-  border: 1px solid red;
+  border: 1px solid lightgray;
   box-sizing: border-box;
-  padding: 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
 }
+
+/* section:hover {
+  background: lightgray;
+  cursor: pointer;
+} */
 
 button {
   margin: 45px;
@@ -29,10 +42,18 @@ button {
 }
 
 button:hover {
-  background: lightgray;
+  background: magenta;
   cursor: pointer;
 }
 
-h4 {
+h4, p {
   margin: 0;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.health {
+  background: #c6e48b;
 }
